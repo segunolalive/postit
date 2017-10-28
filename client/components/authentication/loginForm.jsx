@@ -17,7 +17,7 @@ const Login = (props) => {
       <div className="col s12 l6 offset-l3 component-container " >
       <h3 className="header center grey-text" >Login</h3>
       <p className="red-text"> {props.error} </p>
-      <form method="POST" onSubmit={props.handleSubmit.bind(this)} >
+      <form method="POST" onSubmit={props.handleSubmit} >
         <div className="input-field">
           <input type="text" name="username" id="username" required="required"
             onChange={props.handleChange}
